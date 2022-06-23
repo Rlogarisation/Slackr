@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Slackr</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script type="module" src="src/helpers.js"></script>
+
+  <link rel="stylesheet" type="text/css" media="screen" href="styles/provided.css" />
+</head>
+
+<body>
+
+  <header class="banner">
+    <h1>Slackr</h1>
+  </header>
+
+  <main role="main">
+
+    <div class="modal-content animate" id="loginInForm">
+      <div class="imgcontainer">
+        <img src="https://pbs.twimg.com/profile_images/1192935671473659905/AMUy2VsJ_400x400.jpg" alt="Avatar" class="avatar">
+      </div>
+      <div class="container">
+      <label for="loginEmail">Email: </label>
+<!--        TODO: Delete value before submit-->
+      <input type="email" id="loginEmail" placeholder="Enter Username" value="mia@email.com"/> <br/>
+      <label for="loginPassword">Password: </label>
+      <input type="password" id="loginPassword" placeholder="Enter Password" value="solongbouldercity"/> <br/>
+      <button id="submitButtonLogin">Log In</button> <br>
+      First Time Around? <br>
+      <button id="regoButton">Register Here</button> <br>
+      </div>
+    </div>
+
+    <div class="modal-content animate" id="regoForm" style="display: none">
+
+      <div class="imgcontainer">
+        <img src="https://pbs.twimg.com/profile_images/1192935671473659905/AMUy2VsJ_400x400.jpg" alt="Avatar" class="avatar">
+      </div>
+      <div class="container">
+        <h3>Register Your Account!</h3>
+        <label for="regoEmail">Email: </label>
+        <input type="email" id="regoEmail" placeholder="Enter Email Address"> <br>
+        <label for="regoName">Name: </label>
+        <input type="text" id="regoName" placeholder="Enter Your Full Name"> <br>
+        <label for="regoPassword">Password: </label>
+        <input type="password" id="regoPassword" placeholder="Enter Password"/> <br/>
+        <label for="regoConfirmPassword">Confirm Password: </label>
+        <input type="password" id="regoConfirmPassword" placeholder="Repeat Your Password"/> <br/>
+        <button id="regoSubmit">Submit</button>
+      </div>
+    </div>
+
+    <div class="topnav" id="topNavBar" style="display: none">
+      <a class="active" id="homePage" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a id="profileManagementButton" href="#manageProfile">Manage Profile</a>
+      <a id="logoutButton" href="#logout">Logout</a>
+    </div>
+
+
+
+    <div id="profile" style="display: none">
+      <img id="profileImg" src="" alt=""> <br>
+      <label for="profileImgLink">Profile Photo Link: </label>
+      <input type="text" id="profileImgLink">
+      <p>
+        <label for="profileName">Name:</label>
+        <input type="text" id="profileName">
+      </p>
+      <p>
+        <label for="profileBio">Bio: </label>
+        <input type="text" id="profileBio">
+      </p>
+      <p>
+        <label for="profileEmail">Email:</label>
+        <input type="email" id="profileEmail">
+      </p>
+      <p>
+        <label for="profilePassword">Password: </label>
+        <input type="password" id="profilePassword">
+        <input type="checkbox" id="checkboxForShowingPassword">
+        <label for="checkboxForShowingPassword">Show Password</label>
+      </p>
+      <button id="updateProfileButton">Update</button>
+
+    </div>
+
+
+    <div id="channels"  style="display: none">
+
+      <div id="createChannelForm">
+        <h3>Creating a new channel!</h3>
+        <label for="newChannelName">Channel Name: </label>
+        <input type="text" id="newChannelName" required> <br>
+        <label for="newChannelDescription">Description: </label>
+        <input type="text" placeholder="Optional" id="newChannelDescription"> <br>
+        <label for="typeSelect">Channel Type:</label>
+        <select id="typeSelect" required>
+          <option value="false" >Public</option>
+          <option value="true" >Private</option>
+        </select> <br>
+        <button id="submitNewChannel">Submit</button>
+      </div>
+
+      <h3>Available Channels:</h3>
+      <div id="listPublicChannels">
+        <h3>Public Channels:</h3>
+      </div>
+
+      <div id="listPrivateChannels">
+        Private Channels: <br>
+      </div>
+
+      <div id="createChannel">
+        Want To Create A New Channel?
+        <button id="createChannelButton">Create Here!</button>
+      </div>
+
+      <div id="currentChannelInfo">
+        Detail of this channel:
+        <ul id="currentChannelInfoList"></ul>
+        <div id="channelOperator"></div>
+        <div id="channelInvitation"></div>
+        <form id="channelInvitationForm" name = "inviteForm"></form>
+      </div>
+
+      <div id="channelMsg" style="display: none">
+        <h3>Channel Message Below:</h3>
+        <p id="msg"></p>
+      </div>
+
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+      </div>
+
+      <div id="sendingMsg" style="display: none">
+        <label for="sendingBox"></label>
+        <textarea id="sendingBox" rows="2" cols="70" placeholder="Send Your Message here"></textarea>
+        <button id="sendingButton">Send</button>
+        <form id="uploadImageForm">
+          <input type="file" accept="image/*" id="imageUpload" name="image">
+          <input type="submit">
+        </form>
+      </div>
+
+    </div>
+
+
+
+  </main>
+  <footer>
+    <p>&copy; Slackr</p>
+  </footer>
+  <script type="module" src="src/main.js"></script>
+</body>
+
+</html>

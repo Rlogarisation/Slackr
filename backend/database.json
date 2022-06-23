@@ -1,0 +1,600 @@
+{
+  "users": {
+    "15272": {
+      "email": "mia@email.com",
+      "name": "Mia",
+      "password": "solongbouldercity",
+      "bio": "Hi I am the handsome guy",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/SpongeBob_SquarePants_character.svg/1200px-SpongeBob_SquarePants_character.svg.png",
+      "sessionActive": true
+    },
+    "21419": {
+      "email": "",
+      "name": "",
+      "password": "",
+      "bio": null,
+      "image": null,
+      "sessionActive": true
+    },
+    "40038": {
+      "email": "123",
+      "name": "123",
+      "password": "123",
+      "bio": null,
+      "image": null,
+      "sessionActive": false
+    },
+    "40196": {
+      "email": "zhengrogerluoa@gmail.com",
+      "name": "Zheng Luo",
+      "password": "123",
+      "bio": null,
+      "image": null,
+      "sessionActive": false
+    },
+    "40722": {
+      "email": "zhengrogerluo@gmail.com",
+      "name": "Roger",
+      "password": "Renzhongerdaoyuan6",
+      "bio": null,
+      "image": null,
+      "sessionActive": true
+    },
+    "56422": {
+      "email": "Roger@email.com",
+      "name": "Roger",
+      "password": "chickenonastick",
+      "bio": null,
+      "image": null,
+      "sessionActive": true
+    },
+    "84215": {
+      "email": "zhengrogerluo547@gmail.com",
+      "name": "Zheng Luo",
+      "password": "123",
+      "bio": null,
+      "image": null,
+      "sessionActive": false
+    }
+  },
+  "channels": {
+    "234647": {
+      "name": "Roger's new channel",
+      "creator": 15272,
+      "private": false,
+      "description": "Roger's favour channel",
+      "createdAt": "2021-10-17T05:51:16.167Z",
+      "members": [
+        56422,
+        15272
+      ],
+      "messages": [
+        {
+          "id": 53,
+          "message": "new message\n",
+          "sender": 15272,
+          "sentAt": "2022-04-13T01:28:33.969Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 52,
+          "message": "hi this is roger",
+          "sender": 15272,
+          "sentAt": "2022-04-12T09:30:40.009Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        }
+      ]
+    },
+    "291829": {
+      "name": "Roger's new channel 3",
+      "creator": 15272,
+      "private": false,
+      "description": "Roger's least favour channel",
+      "createdAt": "2021-10-23T10:35:24.708Z",
+      "members": [
+        15272
+      ],
+      "messages": []
+    },
+    "813580": {
+      "name": "Mia's public channel",
+      "creator": 15272,
+      "private": false,
+      "description": "",
+      "createdAt": "2021-09-13T08:00:03.220Z",
+      "members": [
+        15272,
+        56422,
+        40196
+      ],
+      "messages": [
+        {
+          "id": 49,
+          "message": "how are u",
+          "sender": 15272,
+          "sentAt": "2021-10-24T07:28:10.661Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 48,
+          "message": "hahaha (Edited At: 21/10/2021, 15:30:29)",
+          "image": "data:image/jpeg;base64,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",
+          "sender": 15272,
+          "sentAt": "2021-10-21T03:17:15.081Z",
+          "edited": true,
+          "editedAt": "2021-10-21T04:30:29.731Z",
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 42,
+          "message": "yeah, i do! i just didn't think that you did",
+          "sender": 15272,
+          "sentAt": "2021-09-13T08:00:04.181Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 41,
+          "message": "do you like the music i'm playing?",
+          "sender": 56422,
+          "sentAt": "2021-09-13T08:00:04.173Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 40,
+          "message": "well, it matters because if you're gonna give up your dream, i think it matters that you like what you're playing on the road for years",
+          "sender": 15272,
+          "sentAt": "2021-09-13T08:00:04.165Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 39,
+          "message": "i don't... i don't know what it matters",
+          "sender": 56422,
+          "sentAt": "2021-09-13T08:00:04.141Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": true,
+          "reacts": []
+        },
+        {
+          "id": 38,
+          "message": "do you like the music you're playing?",
+          "sender": 15272,
+          "sentAt": "2021-09-13T08:00:04.119Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 37,
+          "message": "yeah it'll be, this is it. i mean, this is it. it could feasibly be ever. i could be on tour with this... for a couple years at least, just this record",
+          "sender": 56422,
+          "sentAt": "2021-09-13T08:00:04.059Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 36,
+          "message": "um... no, that's not really what i mean. i just mean that you, i mean, you're gonna be on tour for what? months now? years?",
+          "sender": 15272,
+          "sentAt": "2021-09-13T08:00:04.032Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 35,
+          "message": "you didn't think it would be successful",
+          "sender": 56422,
+          "sentAt": "2021-09-13T08:00:04.014Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 34,
+          "message": "i don't... i hadn't really thought it through. i didn't know that the band... was so important",
+          "sender": 15272,
+          "sentAt": "2021-09-13T08:00:03.989Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 33,
+          "message": "i mean, what did you think i was gonna do?",
+          "sender": 56422,
+          "sentAt": "2021-09-13T08:00:03.967Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 32,
+          "message": "i mean the long haul, like you're gonna stay in this band... for a long time... on tour",
+          "sender": 15272,
+          "sentAt": "2021-09-13T08:00:03.942Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 31,
+          "message": "what do you mean \"the long haul\"?",
+          "sender": 56422,
+          "sentAt": "2021-09-13T08:00:03.934Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 30,
+          "message": "so it's like the long haul?",
+          "sender": 15272,
+          "sentAt": "2021-09-13T08:00:03.908Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 29,
+          "message": "you know, we tour so we can make the record so we can go back and tour the record",
+          "sender": 56422,
+          "sentAt": "2021-09-13T08:00:03.883Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 28,
+          "message": "but after we finish, we're gonna go to record and then we'll go back on tour",
+          "sender": 56422,
+          "sentAt": "2021-09-13T08:00:03.870Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 27,
+          "message": "when are you finished with the whole tour?",
+          "sender": 15272,
+          "sentAt": "2021-09-13T08:00:03.851Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 26,
+          "message": "what do you mean? i mean...",
+          "sender": 56422,
+          "sentAt": "2021-09-13T08:00:03.827Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 25,
+          "message": "i know, but when are you done?",
+          "sender": 15272,
+          "sentAt": "2021-09-13T08:00:03.797Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 24,
+          "message": "we're just gonna have to try and see each other, y'know, so that we see each other",
+          "sender": 56422,
+          "sentAt": "2021-09-13T08:00:03.772Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": true,
+          "reacts": []
+        },
+        {
+          "id": 23,
+          "message": "but... i wish i could",
+          "sender": 15272,
+          "sentAt": "2021-09-13T08:00:03.756Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 22,
+          "message": "well...",
+          "sender": 56422,
+          "sentAt": "2021-09-13T08:00:03.726Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": true,
+          "reacts": []
+        },
+        {
+          "id": 21,
+          "message": "the best idea right now",
+          "sender": 15272,
+          "sentAt": "2021-09-13T08:00:03.710Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": true,
+          "reacts": []
+        },
+        {
+          "id": 20,
+          "message": "okay",
+          "sender": 56422,
+          "sentAt": "2021-09-13T08:00:03.679Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": [
+            {
+              "user": 15272,
+              "react": "😁"
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "message": "so i don't really think that would be...",
+          "sender": 15272,
+          "sentAt": "2021-09-13T08:00:03.662Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": true,
+          "reacts": []
+        },
+        {
+          "id": 18,
+          "message": "um... well all my stuff is here and it's in two weeks",
+          "sender": 15272,
+          "sentAt": "2021-09-13T08:00:03.646Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 17,
+          "message": "i mean... i guess",
+          "sender": 56422,
+          "sentAt": "2021-09-13T08:00:03.630Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 16,
+          "message": "...anywhere you are?",
+          "sender": 15272,
+          "sentAt": "2021-09-13T08:00:03.616Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 15,
+          "message": "yeah, but can't you rehearse anywhere?",
+          "sender": 56422,
+          "sentAt": "2021-09-13T08:00:03.582Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 14,
+          "message": "cause i have to rehearse",
+          "sender": 15272,
+          "sentAt": "2021-09-13T08:00:03.566Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 13,
+          "message": "yeah",
+          "sender": 56422,
+          "sentAt": "2021-09-13T08:00:03.548Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 12,
+          "message": "come to boise?",
+          "sender": 15272,
+          "sentAt": "2021-09-13T08:00:03.537Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 11,
+          "message": "why can't you?",
+          "sender": 56422,
+          "sentAt": "2021-09-13T08:00:03.507Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 10,
+          "message": "what are you doing after the tour?",
+          "sender": 15272,
+          "sentAt": "2021-09-13T08:00:03.482Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 9,
+          "message": "oh, that would be... really exciting. i wish i could",
+          "sender": 15272,
+          "sentAt": "2021-09-13T08:00:03.455Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 8,
+          "message": "yeah, you can knock that off your bucketlist",
+          "sender": 56422,
+          "sentAt": "2021-09-13T08:00:03.430Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 7,
+          "message": "to boise?",
+          "sender": 15272,
+          "sentAt": "2021-09-13T08:00:03.410Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 6,
+          "message": "you should come",
+          "sender": 56422,
+          "sentAt": "2021-09-13T08:00:03.387Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 5,
+          "message": "to boise!",
+          "sender": 15272,
+          "sentAt": "2021-09-13T08:00:03.362Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 4,
+          "message": "boise",
+          "sender": 56422,
+          "sentAt": "2021-09-13T08:00:03.353Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 3,
+          "message": "boise?",
+          "sender": 15272,
+          "sentAt": "2021-09-13T08:00:03.340Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 2,
+          "message": "yeah, 6:45. boise",
+          "sender": 56422,
+          "sentAt": "2021-09-13T08:00:03.315Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 1,
+          "message": "when do you leave? in the morning?",
+          "sender": 15272,
+          "sentAt": "2021-09-13T08:00:03.296Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        }
+      ]
+    },
+    "813581": {
+      "name": "Roger's public channel",
+      "creator": 56422,
+      "private": false,
+      "description": "",
+      "createdAt": "2021-09-13T08:00:03.220Z",
+      "members": [
+        56422,
+        15272,
+        40196,
+        40722,
+        84215
+      ]
+    },
+    "813582": {
+      "name": "Roger's private channel",
+      "creator": 56422,
+      "private": true,
+      "description": "",
+      "createdAt": "2021-09-13T08:00:03.220Z",
+      "members": [
+        15272,
+        56422
+      ]
+    },
+    "813583": {
+      "name": "Mia's private channel",
+      "creator": 15272,
+      "private": true,
+      "description": "",
+      "createdAt": "2021-09-13T08:00:03.220Z",
+      "members": []
+    }
+  },
+  "nextMessageId": 54
+}
