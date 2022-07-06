@@ -1,4 +1,4 @@
-# Assessment 2 - Vanilla JS: Slackr
+# Vanilla JS: Slackr
 
 1. Background & Motivation
 2. The Task
@@ -19,8 +19,6 @@
 ## 1. Background & Motivation
 
 Web-based applications are becoming the most common way to build a digital capability accessible to a mass audience. While there are modern tools that help us build these rapidly, it's important to understand the fundamental JavaScript-based technology and architectures that exist, both to gain a deeper understanding for when these skills may be needed, but also to simply understand the mechanics of fundamental JS. Even when working with a high level framework like ReactJS, understanding (in-concept) the code that it is transpiled to will ensure you're a more well rounded web-based engineer.
-
-This assignment consists of building a **frontend** website in Vanilla JS (no ReactJS or other frameworks). This frontend will interact with a RESTful API HTTP backend that is built in JavaScript (NodeJS express server) and provided to you.
 
 A theoretical background on how to interface with this API can be found the "promises & fetch" lecture.
 
